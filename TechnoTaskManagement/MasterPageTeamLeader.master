@@ -1,0 +1,97 @@
+<%@ Master Language="VB" CodeFile="MasterPageTeamLeader.master.vb" Inherits="MasterPageAdmin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <title>Untitled Page</title>
+    <link href="Style.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+    #header{
+    background:-moz-radial-gradient(bottom right, #fda134 20%, #ff4f26 );
+    background:-webkit-radial-gradient(bottom right, #fda134, #ff4f26);
+    color:white;
+    height:60px;
+    width:100%;
+    position:fixed;
+    text-align:center;
+    top:-20px;
+    left:0;
+    padding:30px;
+    }
+    ul{
+    list-style-type: none;    background-color:#444;    margin:85px -10px;
+    width: 100%;    position:fixed;
+    }
+    li a {
+    color:white;
+    display:block;
+    padding:6px 25px;    text-align:center;
+    text-decoration:none;
+    }
+    li{
+    float:left;
+    }
+    a:hover{
+    background-color:#ff6d15;
+    }
+    #back{
+    background-color:#f1f1f1;
+    text-align:left;
+    height:100%;
+    }
+    #tabl{
+    margin:0 -7px;
+    }
+    .menu{
+    display:block;
+    text-decoration:None;
+    color:black;
+    padding:10px 15px;
+    }
+    .menu:hover{
+    background-color: #ff6d15;
+    }
+    #bdy
+    {
+    height:100%;
+    }
+    </style>
+</head>
+<body id="bdy">
+    <p id="header">
+        <span style="font-size: 24pt; font-family: Cambria"><strong>Techno Task Management</strong></span></p>
+         <ul>
+  <li> <a href="Home.aspx">Home</a> </li>
+  <li> <a href="Login.aspx">Login</a> </li>
+  <li> <a href="AboutUs.aspx">AboutUs</a> </li>
+  <li> <a href="ContactUs.aspx">ContactUs</a> </li>
+    </ul>
+     <table width="100%" id="tabl" >
+        <tr>
+            <td id="back" valign="top">
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                     <a class="menu" href="ViewPersonalDetailLeader.aspx">Personal Details</a>
+                <a class="menu" href="AddPerformanceScore.aspx">Add Performance Score</a>
+                <a class="menu" href="ViewEmployeeLeader.aspx">View Employee</a>
+                <a class="menu" href="ViewProjectLeader.aspx">View Project</a>
+                <a class="menu" href="ViewPerformanceScoreLeader.aspx">View Performance Score</a>
+                <a class="menu" href="Home.aspx">Logout</a>
+                
+            </td>
+            <td style="width:85%" valign="top">
+    
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+        </asp:contentplaceholder>
+     </td>
+        </tr>
+    </table> 
+</body>
+</html>

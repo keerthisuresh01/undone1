@@ -1,0 +1,12 @@
+﻿html,div,table
+{
+	width:100%;
+}
+html,table,div
+{
+	height:100%;
+}
+div,table
+{
+	text-align:center;
+}
